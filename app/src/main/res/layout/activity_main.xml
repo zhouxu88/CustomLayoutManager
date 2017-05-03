@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/manager_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/circle_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="圆弧" 
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/scroll_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩放"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/circle_scroll_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="圆弧+缩放"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/gallery_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="画廊"
+            android:textSize="14sp"/>
+
+    </RadioGroup>
+</RelativeLayout>
